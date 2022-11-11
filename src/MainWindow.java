@@ -22,7 +22,8 @@ public class MainWindow extends JFrame {
     /* title azaz fő felirat "Raktár" 
      * A főablak tetején jelenik meg,
      * mint minden program esetén, talán
-     * célszerű ide tenni.
+     * célszerű ide tenni. De ez még
+     * átgondolható.
     */
     JLabel afel;
     /* eancode felirata "ean kód" */
@@ -48,10 +49,10 @@ public class MainWindow extends JFrame {
     /* save, azaz Mentés gomb */
     JButton c;
     /* Button azért került panelre, mert így lesz 
-    egy kis szegélyse automatikusan */
+    egy kis szegélye automatikusan */
     JPanel buttonPanel;
-
     public MainWindow() {
+        /* A border objektum később felhasználható bárhol */
         Border border = new EmptyBorder(10, 2, 10, 10);
         this.afel = new JLabel("Raktár");
         this.efel = new JLabel("EAN kód");
@@ -95,6 +96,7 @@ this.pane = new JPanel();
         this.pack();
         this.setVisible(true);
     }
+    /* Ez a metódus elő fogja készíteni az ablak beállítását */
     private void a() {
         System.out.println(this.encdf.getText());
         System.out.println(this.nf.getText());
