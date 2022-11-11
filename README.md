@@ -1,6 +1,6 @@
 # Raktárkezelő rendszer
 
-Raktárkezelő rendszer részlet, refaktorlására.
+Raktárkezelő rendszer részlet, refaktorálásra.
 A megvalósított részlet a bevételezés.
 
 Írja át a kódot a Tiszta kód alapelvei szerint.
